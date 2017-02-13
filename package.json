@@ -4,6 +4,7 @@
   "description": "Aprendiendo nodejs victor guillem agustí",
   "main": "chat_example.js",
   "dependencies": {
+    "body-parser": "^1.16.1",
     "express": "^4.14.1",
     "split": "^1.0.0"
   },

@@ -19,6 +19,7 @@ app.get('/index',function(req,res){
         });
 
 app.get('/public/:fname',function(req,res){
+        console.log(req.params.fname);
         res.sendFile(req.params.fname,{root:application_root});
         });
 
