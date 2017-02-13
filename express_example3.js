@@ -29,5 +29,13 @@ app.post('/persona',function(req,res){
         res.send({result:"ok"});
         });
 
+var control = require('./modulo.js');
+
+app.get('/personas', function (req, res) {
+    control.getPersonas(function(data){
+        res.send(data);
+    })
+});
+
 app.listen(8000);
 
